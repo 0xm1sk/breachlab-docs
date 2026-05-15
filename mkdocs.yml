@@ -9,16 +9,16 @@ theme:
       primary: black
       accent: green
   features:
-    - navigation.tabs        # Top-level navigation tabs
-    - navigation.sections    # Section-based sidebar
-    - navigation.expand-all   # All sections expanded by default
-    - navigation.top        # "Back to top" button
-    - navigation.tracking    # Highlight active page in sidebar
-    - search.suggest          # Search suggestions
-    - search.highlight       # Highlight search terms
-    - search.share            # Share search results
-    - content.code.copy       # One-click copy for all code blocks
-    - content.code.annotate  # Ability to add annotations to code
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand-all
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
 
 extra_css:
   - stylesheets/custom.css
