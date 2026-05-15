@@ -1,0 +1,52 @@
+site_name: BreachLab Notes
+site_description: Offensive Security Knowledge Base & Methodology
+site_author: 0Xm!$k
+
+theme:
+  name: material
+  palette:
+    - scheme: slate # Dark mode
+      primary: black
+      accent: green
+  features:
+    - navigation.tabs        # Top-level navigation tabs
+    - navigation.sections    # Section-based sidebar
+    - navigation.expand-all   # All sections expanded by default
+    - navigation.top        # "Back to top" button
+    - navigation.tracking    # Highlight active page in sidebar
+    - search.suggest          # Search suggestions
+    - search.highlight       # Highlight search terms
+    - search.share            # Share search results
+    - content.code.copy       # One-click copy for all code blocks
+    - content.code.annotate  # Ability to add annotations to code
+
+extra_css:
+  - stylesheets/custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/0xm1sk
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/users/1063534082241331220
+
+nav:
+  - Home: index.md
+  - Ghost Track: 
+    - Overview: ghost/index.md
+    - Levels:
+      - Level 1: ghost/lvl1.md
+      - Level 2: ghost/lvl2.md
+      - Level 3: ghost/lvl3.md
+      - Level 4: ghost/lvl4.md
+      - Level 5: ghost/lvl5.md
+      - Level 6: ghost/lvl6.md
+      - Level 7: ghost/lvl7.md
+      - Level 8: ghost/lvl8.md
+      - Level 9: ghost/lvl9.md
+      - Level 10: ghost/lvl10.md
+      - Level 21: ghost/lvl21.md
+      - Level 22: ghost/lvl22.md
+      - Level 23: ghost/lvl23.md
+  - Phantom Track:
+    - Overview: phantom/index.md

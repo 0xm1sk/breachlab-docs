@@ -1,0 +1,107 @@
+/* Professional Operator Theme - Fusion of Dracula, TokyoNight & Catppuccin */
+:root {
+    /* Palette: Deep Purple-Blacks, Soft Pastels, and Neon Accents */
+    --bg-dark: #1a1b26;        /* TokyoNight Storm background */
+    --bg-darker: #16161e;      /* Even deeper black for sidebars */
+    --accent-green: #9ece6a;   /* Catppuccin Green */
+    --accent-purple: #bb9af7;  /* TokyoNight Purple */
+    --accent-blue: #7aa2f7;    /* TokyoNight Blue */
+    --text-main: #a9b1//c3;    /* Soft grey-white for readability */
+    --text-bright: #c0caf5;    /* Bright silver-blue */
+    --border-color: #414868;   /* Muted border */
+}
+
+body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-main) !important;
+    font-family: 'Inter', 'Fira Code', 'Segoe UI', sans-serif !important;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+.md-header {
+    background-color: var(--bg-darker) !important;
+    border-bottom: 2px solid var(--accent-purple) !important;
+}
+
+.md-nav {
+    background-color: var(--bg-darker) !important;
+    color: var(--text-main) !important;
+    border-right: 1px solid var(--border-color);
+}
+
+.md-nav__link {
+    color: var(--text-main) !important;
+    transition: all 0.2s ease;
+}
+
+.md-nav__link:hover, .md-nav__link--active {
+    color: var(--accent-purple) !important;
+    background-color: rgba(187, 154, 247, 0.1) !important;
+    border-left: 3px solid var(--accent-purple);
+}
+
+/* Content Area */
+.md-content {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-main) !important;
+}
+
+/* Headings - Using a mix of Purple and Blue */
+h1 { color: var(--accent-purple) !important; font-weight: 700 !important; }
+h2 { color: var(--accent-blue) !important; border-bottom: 1px solid var(--border-color) !important; padding-bottom: 10px; }
+h3 { color: var(--accent-green) !important; }
+
+/* Code blocks - "Soft-Dark" look */
+.md-typeset pre {
+    background-color: #16161e !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.md-typeset code {
+    color: var(--accent-green) !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    font-family: 'Fira Code', monospace !important;
+}
+
+/* Links */
+a {
+    color: var(--accent-blue) !important;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-purple) !important;
+    text-decoration: none;
+}
+
+
+/* Custom Scrollbar for that clean look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-darker);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-purple);
+}
+
+/* Custom "Operator" accent for page titles */
+h1::before {
+    content: '>'; 
+    color: var(--accent-green);
+    margin-right: 10px;
+    font-family: monospace;
+}
+
+/* Remove "Made with Material for MkDocs" footer */
+.md-footer-meta__inside {
+    display: none !important;
+}
