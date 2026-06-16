@@ -29,6 +29,15 @@ Exfiltrate data through covert channels (DNS, HTTPS, ICMP) and wipe every forens
 ## Level Index
 
 ### I. Escalation (0–9)
+- Level 0: Entry Point — *Coming Soon*
+- Level 1: SUID Basics — *Coming Soon*
+- Level 2: Sudo Rules — *Coming Soon*
+- Level 3: Library Hijacking — *Coming Soon*
+- Level 4: Capabilities — *Coming Soon*
+- Level 5: Writable Files — *Coming Soon*
+- Level 6: Cron & Systemd — *Coming Soon*
+- Level 7: Polkit Abuse — *Coming Soon*
+- Level 8: Ptrace Injection — *Coming Soon*
 - [Level 9: Stack Day](./lvl9.md) — **Precision Overflow & ASLR Bypass**
 
 ---
